@@ -1,0 +1,34 @@
+{
+    "name": "char-ai",
+    "short_name": "char-ai",
+    "description": "Interactúa y descubre la experiencia de charlar con personajes de AI fascinantes en char-ai. Disfruta de conversaciones auténticas y emocionantes que evolucionan con cada interacción.",
+    "keywords": ["char-ai", "chatbot", "character", "ai"],
+    "author": "Jeremy Díaz",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jevmydev/char-ai.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jevmydev/char-ai/issues"
+    },
+    "icons": [
+        {
+            "src": "/favicon.webp",
+            "sizes": "200x200",
+            "type": "image/webp",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/favicon-512x512.webp",
+            "sizes": "512x512",
+            "type": "image/webp"
+        }
+    ],
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "theme_color": "#fafafa",
+    "background_color": "#09090b",
+    "id": "/index.html",
+    "start_url": "/index.html",
+    "homepage": "https://char-ai.netlify.app/"
+}

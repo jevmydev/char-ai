@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "name": "John Doe",
+        "description": "A hard-working software engineer who loves coding",
+        "image": "https://unavatar.io/john-doe"
+    },
+    {
+        "id": "2",
+        "name": "Jane Smith",
+        "description": "A talented musician who plays the guitar and sings",
+        "image": "https://unavatar.io/jane-smith"
+    },
+    {
+        "id": "3",
+        "name": "Bob Johnson",
+        "description": "An adventurer who travels the world and takes amazing photographs",
+        "image": "https://unavatar.io/bob-johnson"
+    },
+    {
+        "id": "4",
+        "name": "Samantha Lee",
+        "description": "A brilliant scientist who specializes in genetic engineering",
+        "image": "https://unavatar.io/samantha-lee"
+    }
+]
