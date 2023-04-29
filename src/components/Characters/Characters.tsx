@@ -9,7 +9,7 @@ export const Characters = () => {
         characters && (
             <section>
                 <div className="max-w-screen-xl mx-auto p-4 py-36 relative" id="characters">
-                    <h2 className="font-bold text-7xl tracking-tighter pb-8">Personajes famosos</h2>
+                    <h2 className="font-bold text-7xl pb-8">Personajes famosos</h2>
                     <div className="flex gap-4">
                         {characters.map((character) => {
                             const { id } = character;

@@ -13,7 +13,7 @@ export const CharactersItem = ({ character }: CharactersItemProps) => {
         <Link to={`/chat/${name}`} title={`Chatea con ${name}`} isActive>
             <article className="flex flex-col gap-4 p-8">
                 <header>
-                    <img className="rounded-2xl" src={image} alt={name} loading="lazy" decoding="async" />
+                    <img className="rounded-2xl w-52 h-52 object-cover" src={image} alt={name} loading="lazy" decoding="async" />
                 </header>
                 <footer>
                     <h3 className="font-bold text-2xl text-green-300">{name}</h3>
