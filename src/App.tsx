@@ -5,7 +5,6 @@ import Header from "./components/Header/Header";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const ChatPage = lazy(() => import("./pages/ChatPage"));
-const ProductPage = lazy(() => import("./pages/ProductPage"));
 
 export const App = () => {
     return (
@@ -16,7 +15,6 @@ export const App = () => {
                     <Routes>
                         <Route path="/" element={<HomePage />} />
                         <Route path="/chat/:character" element={<ChatPage />} />
-                        <Route path="/product" element={<ProductPage />} />
                         <Route path="/*" element={<HomePage />} />
                     </Routes>
                 </Suspense>
