@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const ChatPage = lazy(() => import("./pages/ChatPage"));
@@ -19,6 +20,7 @@ export const App = () => {
                     </Routes>
                 </Suspense>
             </main>
+            <Footer />
         </>
     );
 };
