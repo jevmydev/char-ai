@@ -13,6 +13,7 @@ export const Input = ({ name, type, placeholder, onChange }: InputProps) => {
             type={type}
             name={name}
             placeholder={placeholder}
+            required
             onChange={onChange}
         />
     );
