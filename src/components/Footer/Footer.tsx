@@ -1,9 +1,10 @@
 import Link from "../../elements/Link";
+import Lines from "../../elements/Lines";
 
 export const Footer = () => {
     return (
         <footer className="bg-zinc-950">
-            <div className="max-w-screen-xl mx-auto p-4 flex items-center justify-between">
+            <div className="max-w-screen-xl mx-auto p-4 flex items-center justify-between relative">
                 <p className="flex items-center gap-2">
                     Desarrollado por
                     <span className="font-bold">
@@ -12,6 +13,7 @@ export const Footer = () => {
                         </Link>
                     </span>
                 </p>
+                <Lines direction="items-end" />
             </div>
         </footer>
     );
