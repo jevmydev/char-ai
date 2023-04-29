@@ -13,11 +13,12 @@ export const Create = () => {
 
         const name = formData.get("name")?.toString() || "";
         const description = formData.get("description")?.toString() || "";
+        const image = `https://unavatar.io/${name.split(" ").join("-")}`;
 
         setCharacter({
             name,
             description,
-            image: `https://unavatar.io/${name}`
+            image
         });
     };
 
