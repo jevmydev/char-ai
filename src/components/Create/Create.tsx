@@ -1,11 +1,10 @@
-import { useState } from "react";
-import { type CharactersType } from "../../types";
+import { useChatter } from "../../hooks/useChatter";
 
 import CreateForm from "./CreateForm";
 import CreatePreview from "./CreatePreview";
 
 export const Create = () => {
-    const [character, setCharacter] = useState<CharactersType | null>(null);
+    const { chatter, setChatter } = useChatter();
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -15,11 +14,13 @@ export const Create = () => {
         const description = formData.get("description")?.toString() || "";
         const image = `https://unavatar.io/${name.split(" ").join("-")}`;
 
-        setCharacter({
+        setChatter({
             name,
             description,
             image
         });
+
+        e.currentTarget.reset();
     };
 
     return (
@@ -28,7 +29,7 @@ export const Create = () => {
                 <h2 className="font-bold text-7xl pb-8">Crea tu propio personaje</h2>
                 <div className="flex gap-4 pt-16">
                     <CreateForm onSubmit={handleSubmit} />
-                    {character && <CreatePreview character={character} />}
+                    {chatter && <CreatePreview character={chatter} />}
                 </div>
             </div>
         </section>
