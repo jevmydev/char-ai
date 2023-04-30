@@ -7,9 +7,10 @@ interface LinkProps {
     target?: string;
     isActive?: boolean;
     children: React.ReactNode;
+    onClick?: () => void;
 }
 
-export const Link = ({ to, isHashLink, title, target, isActive, children }: LinkProps) => {
+export const Link = ({ to, isHashLink, title, target, isActive, children, onClick }: LinkProps) => {
     const activeLinkClass = isActive ? "bg-zinc-900 px-5 py-3 hover:bg-zinc-800" : "text-zinc-300";
 
     return !isHashLink ? (
@@ -19,6 +20,7 @@ export const Link = ({ to, isHashLink, title, target, isActive, children }: Link
             title={title}
             target={target}
             rel="noopener noreferrer"
+            onClick={onClick}
         >
             {children}
         </RouterLink>
