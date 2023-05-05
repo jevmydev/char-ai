@@ -27,7 +27,7 @@ export const Create = () => {
         <section className="bg-green-700">
             <div className="max-w-screen-xl mx-auto p-4 py-36">
                 <h2 className="font-bold text-7xl pb-8">Crea tu propio personaje</h2>
-                <div className="flex gap-4 pt-16">
+                <div className="flex gap-4">
                     <CreateForm onSubmit={handleSubmit} />
                     {chatter && <CreatePreview character={chatter} />}
                 </div>
