@@ -15,7 +15,7 @@ export const CharactersItem = ({ character }: CharactersItemProps) => {
 
     return (
         <Link to={`/chat/${name}`} title={`Chatea con ${name}`} isActive onClick={handleClick}>
-            <article className="flex flex-col gap-4 p-8">
+            <article className="flex flex-col gap-4 p-8 items-center">
                 <header>
                     <img className="rounded-2xl w-52 h-52 object-cover" src={image} alt={name} loading="lazy" decoding="async" />
                 </header>

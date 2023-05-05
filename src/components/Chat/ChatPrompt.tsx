@@ -7,7 +7,7 @@ interface ChatPromptProps {
 
 export const ChatPrompt = ({ onSubmit }: ChatPromptProps) => {
     return (
-        <div className="absolute w-full bottom-0 z-10 bg-zinc-900">
+        <div className="absolute w-full bottom-0 left-0 z-10 bg-zinc-900">
             <form className="flex items-center w-full" onSubmit={onSubmit}>
                 <Input placeholder="Escribe aquí..." name="message" />
                 <Button title="Enviar mensaje" isActive>
