@@ -6,8 +6,8 @@ interface ChatterProviderProps {
 }
 
 interface ChatterStateType {
-    chatter: CharactersType;
-    setChatter: React.Dispatch<React.SetStateAction<CharactersType | null>>;
+    chatter: CharactersType | unknown;
+    setChatter: React.Dispatch<React.SetStateAction<CharactersType | null>> | unknown;
 }
 
 export const ChatterContext = createContext<ChatterStateType | null>(null);
